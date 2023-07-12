@@ -1,30 +1,93 @@
-<script setup>
-import HelloWorld from './components/HelloWorld.vue'
-</script>
-
 <template>
-  <div>
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://vuejs.org/" target="_blank">
-      <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
-    </a>
-  </div>
-  <HelloWorld msg="Vite + Vue" />
+  <Header />
+  <main>
+    <h1 class="title-content">Inputs</h1>
+    <div class="inputs-styles-section">
+      <ul class="inputs-styles-list" id="default">
+        <li class="input-style-item">
+          <span class="style-name">Input</span>
+          <Input 
+            :labelName="'Label'" 
+            :placeholderInput="'Placeholder'"
+          />
+        </li>
+        <li class="input-style-item">
+          <span class="style-name">&:hover</span>
+          <Input 
+            class="on-hover"  
+            :labelName="'Label'" 
+            :placeholderInput="'Placeholder'"
+          />
+        </li>
+        <li class="input-style-item">
+          <span class="style-name">&:focus</span>
+          <Input 
+            :labelName="'Label'" 
+            :placeholderInput="'Placeholder'"
+            class="on-focus"
+          />
+        </li>
+      </ul>
+    </div>
+
+    <span class="icon-link">
+      Icons: https://material.io/resources/icons/?style=round
+    </span>
+  </main>
+  <footer>created by Nehuen - devChallenges.io</footer>
 </template>
 
-<style scoped>
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+<script >
+  import Header from './components/UI/Header.vue';
+  import Input from './components/UI/Input.vue';
+  export default {
+    name: 'App',
+    components: {
+      Header,
+      Input
+    }
+  }
+</script>
+
+<style>
+
+main .title-content {
+  font: 500 1.5rem 'Poppins', sans-serif;
+  color: #4F4F4F;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+
+.inputs-styles-section {
+  display: flex;
+  flex-direction: column;
+  row-gap: 5vh;
 }
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
+
+ul.inputs-styles-list {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3vh 2vw;
 }
+
+.inputs-styles-list li.input-style-item {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1vh;
+}
+
+li.input-style-item .style-name {
+  font: 400 14px 'Ubuntu Mono', monospace;
+}
+
+.icon-link {
+  font: 400 12px 'Ubuntu Mono', monospace;;
+  color: #828282;
+}
+
+footer {
+  grid-area: footer;
+  color: #A9A9A9;
+  font: 700 14px 'Montserrat', sans-serif;
+}
+
 </style>
