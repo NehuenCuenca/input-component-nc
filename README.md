@@ -9,7 +9,7 @@ This template should help get you started developing with Vue 3 in Vite. The tem
 
 <!-- Please update value in the {}  -->
 
-<h1 align="center">{Your project name}</h1>
+<h1 align="center">Input component NC</h1>
 
 <div align="center">
    Solution for a challenge from  <a href="http://devchallenges.io" target="_blank">Devchallenges.io</a>.
@@ -17,11 +17,11 @@ This template should help get you started developing with Vue 3 in Vite. The tem
 
 <div align="center">
   <h3>
-    <a href="https://{your-demo-link.your-domain}">
+    <a href="https://input-component-nc.netlify.app/">
       Demo
     </a>
     <span> | </span>
-    <a href="https://{your-url-to-the-solution}">
+    <a href="https://devchallenges.io/solutions/YTlD6tjILW21eOEdd7yX">
       Solution
     </a>
     <span> | </span>
@@ -59,10 +59,9 @@ Introduce your projects by taking a screenshot or a gif. Try to tell visitors a 
 ### Built With
 
 <!-- This section should list any major frameworks that you built your project using. Here are a few examples.-->
-
-- [React](https://reactjs.org/)
+- HTML
+- CSS
 - [Vue.js](https://vuejs.org/)
-- [Tailwind](https://tailwindcss.com/)
 
 ## Features
 
@@ -99,16 +98,16 @@ $ npm start
 
 Challenge: Create a reusable input with all the states in the design and a page displaying all the states. You can work on the same project with other design system challenges. Use Front-end libraries like React or Vue. Don’t look at the existing solution. Fulfill user stories below:
 
-User story: I can see error state
-User story: I can choose to disable input
-User story: I can choose to have helper text
+User story: I can see error state ✅
+User story: I can choose to disable input ✅
+User story: I can choose to have helper text ✅
 User story: I can choose to have an icon on the left or right (Use Google Icon and at least 5 variants)
-User story: I can have different input sizes
-User story: I can have different colors
-User story: I can choose to have input take the width of the parent
-User story: I can have multiline input like a textarea
-User story: When I hover or focus, I can see visual indicators
-User story: I can still access all input attributes
+User story: I can have different input sizes ✅
+User story: I can have different colors 
+User story: I can choose to have input take the width of the parent ✅
+User story: I can have multiline input like a textarea ✅
+User story: When I hover or focus, I can see visual indicators ✅
+User story: I can still access all input attributes ✅
 User story (optional): Show input in a similar way like the design or use Storybook. Otherwise, showing the input in multiple states is enough
 Icon: https://google.github.io/material-design-icons/
 

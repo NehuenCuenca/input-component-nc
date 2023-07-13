@@ -106,6 +106,7 @@ span.helper-text {
   font: 400 10px "Noto Sans JP", sans-serif;
 }
 
+textarea:hover,
 input:hover,
 .on-hover input {
   border: 1px solid #333333;
