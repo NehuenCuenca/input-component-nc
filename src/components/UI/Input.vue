@@ -19,7 +19,7 @@
       rows="4"
     ></textarea>
 
-    <div v-if="withIcon" class="wrapper-icon" :class="withIcon ? withIcon : ''">
+    <div v-if="withIcon" class="wrapper-icon" :class="withIcon ? withIcon.place : ''">
       <input
         type="text"
         :id="idLabel"
@@ -27,7 +27,7 @@
         :disabled="disabledInput"
         :value="initialValue"
       />
-      <i>📱</i>
+      <i>{{ withIcon.icon }}</i>
     </div>
 
     <span v-if="helperText" class="helper-text">{{ helperText }}</span>
@@ -56,7 +56,7 @@ export default {
       required: false,
     },
     withIcon: {
-      type: String,
+      type: Object,
       required: false,
     },
     initialValue: {

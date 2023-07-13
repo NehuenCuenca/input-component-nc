@@ -93,7 +93,7 @@
           <Input 
             :labelName="'Label'" 
             :placeholderInput="'Placeholder'"
-            :withIcon="'start-icon'"
+            :withIcon="{ place: 'start-icon', icon: '📱'}"
           />
         </li>
         <li class="input-style-item">
@@ -101,7 +101,7 @@
           <Input 
             :labelName="'Label'" 
             :placeholderInput="'Placeholder'"
-            :withIcon="'end-icon'"
+            :withIcon="{ place: 'end-icon', icon: '🏠'}"
           />
         </li>
       </ul>
