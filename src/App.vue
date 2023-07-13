@@ -22,9 +22,86 @@
         <li class="input-style-item">
           <span class="style-name">&:focus</span>
           <Input 
+            class="on-focus"  
             :labelName="'Label'" 
             :placeholderInput="'Placeholder'"
-            class="on-focus"
+          />
+        </li>
+      </ul>
+
+      <ul class="inputs-styles-list" id="error">
+        <li class="input-style-item">
+          <span class="style-name">Error</span>
+          <Input 
+            class="error"
+            :labelName="'Label'" 
+            :placeholderInput="'Placeholder'"
+          />
+        </li>
+        <li class="input-style-item">
+          <span class="style-name">&:hover</span>
+          <Input 
+            class="error on-hover"  
+            :labelName="'Label'" 
+            :placeholderInput="'Placeholder'"
+          />
+        </li>
+        <li class="input-style-item">
+          <span class="style-name">&:focus</span>
+          <Input 
+            class="error on-focus"
+            :labelName="'Label'" 
+            :placeholderInput="'Placeholder'"
+          />
+        </li>
+      </ul>
+
+      <ul class="inputs-styles-list" id="disabled">
+        <li class="input-style-item">
+          <span class="style-name">Disabled</span>
+          <Input 
+            :labelName="'Label'" 
+            :placeholderInput="'Placeholder'"
+            :disabledInput="true"
+          />
+        </li>
+      </ul>
+
+      <ul class="inputs-styles-list" id="with-helperText">
+        <li class="input-style-item">
+          <span class="style-name">Helper text</span>
+          <Input 
+            :labelName="'Label'" 
+            :placeholderInput="'Placeholder'"
+            :helperText="'Some interesting text'"
+          />
+        </li>
+        <li class="input-style-item">
+          <span class="style-name">Helper text</span>
+          <Input 
+            class="error"
+            :labelName="'Label'" 
+            :placeholderInput="'Placeholder'"
+            :helperText="'Some interesting text'"
+          />
+        </li>
+      </ul>
+
+      <ul class="inputs-styles-list" id="with-icon">
+        <li class="input-style-item">
+          <span class="style-name">Start icon</span>
+          <Input 
+            :labelName="'Label'" 
+            :placeholderInput="'Placeholder'"
+            :withIcon="'start-icon'"
+          />
+        </li>
+        <li class="input-style-item">
+          <span class="style-name">End icon</span>
+          <Input 
+            :labelName="'Label'" 
+            :placeholderInput="'Placeholder'"
+            :withIcon="'end-icon'"
           />
         </li>
       </ul>
