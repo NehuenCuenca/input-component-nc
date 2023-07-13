@@ -105,11 +105,55 @@
           />
         </li>
       </ul>
-    </div>
 
-    <span class="icon-link">
-      Icons: https://material.io/resources/icons/?style=round
-    </span>
+      <ul class="inputs-styles-list" id="with-value">
+        <li class="input-style-item">
+          <span class="style-name">With initial value</span>
+          <Input 
+            :labelName="'Label'" 
+            :placeholderInput="'Placeholder'"
+            :initialValue="'Text'"
+          />
+        </li>
+      </ul>
+
+      <ul class="inputs-styles-list" id="input-sizes">
+        <li class="input-style-item">
+          <span class="style-name">Size sm</span>
+          <Input 
+            class="s-sm"
+            :labelName="'Label'" 
+            :placeholderInput="'Placeholder'"
+          />
+        </li>
+        <li class="input-style-item">
+          <span class="style-name">Size md</span>
+          <Input 
+            class="s-md"
+            :labelName="'Label'" 
+            :placeholderInput="'Placeholder'"
+          />
+        </li>
+        <li class="input-style-item" id="fullWidthItem">
+          <span class="style-name">Full width</span>
+          <Input 
+            class="fullWidth"
+            :labelName="'Label'" 
+            :placeholderInput="'Placeholder'"
+          />
+        </li>
+      </ul>
+      <ul class="inputs-styles-list" id="multi-line">
+        <li class="input-style-item">
+          <span class="style-name">Multi-line 4 rows</span>
+          <Input 
+            :labelName="'Label'" 
+            :placeholderInput="'Placeholder'"
+            :isMultiline="true"
+          />
+        </li>
+      </ul>
+    </div>
   </main>
   <footer>created by Nehuen - devChallenges.io</footer>
 </template>
@@ -152,19 +196,15 @@ ul.inputs-styles-list {
   row-gap: 1vh;
 }
 
-li.input-style-item .style-name {
-  font: 400 14px 'Ubuntu Mono', monospace;
-}
+li.input-style-item#fullWidthItem { width: 100%; }
 
-.icon-link {
-  font: 400 12px 'Ubuntu Mono', monospace;;
-  color: #828282;
-}
+li.input-style-item .style-name { font: 400 14px 'Ubuntu Mono', monospace; }
 
 footer {
   grid-area: footer;
   color: #A9A9A9;
   font: 700 14px 'Montserrat', sans-serif;
+  padding-top: 5vh;
 }
 
 </style>
