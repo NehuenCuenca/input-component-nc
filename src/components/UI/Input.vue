@@ -113,6 +113,7 @@ input:hover,
   outline: 1px solid #333333;
 }
 
+textarea:focus,
 input:focus,
 .on-focus input {
   border: 1px solid #2962ff;
